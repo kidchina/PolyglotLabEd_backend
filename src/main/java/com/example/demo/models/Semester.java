@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Collection;
+
 @Data
 @Builder
 @Entity
@@ -13,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class Semester {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id ;
+    private long id_semester ;
     private int number;
 
 }
